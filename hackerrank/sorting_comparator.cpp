@@ -5,12 +5,12 @@
 #include<algorithm>
 using namespace std;
 
-struct Player {
+struct players {
     int score;
     string name;
 };
 
-bool compare(Player a, Player b) {
+bool compare(players a, players b) {
     if(a.score == b.score) return a.name<b.name;
     else return a.score>b.score;
 }
@@ -18,12 +18,12 @@ int main()
 {
     int n;
     cin >> n;
-    vector< Player > players;
+    vector< players > players;
     string name;
     int score;
     for(int i = 0; i < n; i++){
         cin >> name >> score;
-        Player player;
+        players player;
         player.name = name, player.score = score;
         players.push_back(player);
     }
