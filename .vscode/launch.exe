@@ -1,0 +1,35 @@
+# 1 "c:\\Users\\Bhuwan\\Desktop\\main\\.vscode\\launch.json"
+# 1 "C:\\MinGW\\bin//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "c:\\Users\\Bhuwan\\Desktop\\main\\.vscode\\launch.json"
+{
+
+
+
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "cpp.exe build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+            "preLaunchTask": "echo",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "cpp.exe build active file"
+        }
+    ]
+}
